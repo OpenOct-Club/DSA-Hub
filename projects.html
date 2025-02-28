@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Hub | Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>DSA Hub</span>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="dsa.html">DSA Guide</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="page-header">
+      <div class="container">
+        <h1>DSA Projects</h1>
+        <p>Browse our collection of data structures and algorithms implementations</p>
+        <br>
+        <a href="https://github.com/Jivan052" class="btn btn-outline dsa-details" data-id="arrays"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+    
+    <section class="filters" id="projects">
+      <div class="container">
+        <div class="filters-container">
+          <div class="filter-group">
+            <label for="language-filter">Language</label>
+            <select id="language-filter">
+              <option value="all">All Languages</option>
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="cpp">C++</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="difficulty-filter">Difficulty</label>
+            <select id="difficulty-filter">
+              <option value="all">All Difficulties</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="category-filter">Category</label>
+            <select id="category-filter">
+              <option value="all">All Categories</option>
+              <option value="data-structure">Data Structure</option>
+              <option value="algorithm">Algorithm</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="search-input">Search</label>
+            <input type="text" id="search-input" class="search-input" placeholder="Search projects...">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- projects grid styling from - from dsa.html -->
+
+    <section class="dsa-categories">
+      <div class="container">
+        
+        <div class="dsa-grid" id="dsa-grid">
+
+          <!-- Data Structures -->
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Hospital Management System</h3>
+              <span class="difficulty medium">Medium</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Maintaines patient records, appointment schedules, and medical history.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i>Use of linked lists for efficient data storage</li>
+                <li><i class="fas fa-check"></i>Implementing a search algorithm for quick patient retrieval</li>
+                <li><i class="fas fa-check"></i>Easy to understand</li>
+                <li><i class="fas fa-check"></i>Time complexity of O(n)</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="arrays"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Simple Pop-Up</h3>
+              <span class="difficulty easy">Easy</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Simple stack & queue implementation with memory efficiency & easy to understand implementation</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i>Used arrays (fixed) or linked lists (dynamic).</li>
+                <li><i class="fas fa-check"></i>Handled underflow and overflow.</li>
+                <li><i class="fas fa-check"></i>Used circular queue or two stacks.</li>
+                <li><i class="fas fa-check"></i>Implemented undo-redo or task scheduling.</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="arrays"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Expression Evaluator</h3>
+              <span class="difficulty medium">Medium</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Data structure that implements an associative stack abstract data type.</p>
+              <ul class="dsa-features">
+                <ul class="dsa-features">
+                  <li><i class="fas fa-check"></i> Used Stack for postfix/infix evaluation.</li>
+                  <li><i class="fas fa-check"></i> Optimized with two stacks for operators and operands.</li>
+                  <li><i class="fas fa-check"></i> Handled invalid expressions and divide-by-zero.</li>
+                  <li><i class="fas fa-check"></i> Solves mathematical expressions efficiently.</li>
+                </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="arrays"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="algorithms">
+            <div class="dsa-card-header">
+              <h3>Graph Algorithms</h3>
+              <span class="difficulty hard">Hard</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Algorithms that operate on graphs to solve problems like shortest path.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Dijkstra's Algorithm</li>
+                <li><i class="fas fa-check"></i> Bellman-Ford Algorithm</li>
+                <li><i class="fas fa-check"></i> Kruskal's Algorithm</li>
+                <li><i class="fas fa-check"></i> Prim's Algorithm</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="arrays"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+      
+    </section>
+
+    <!-- --------------------- -->
+    
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 DSA Hub. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title">Project Title</h3>
+          <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <!-- Modal content will be rendered here -->
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-outline" id="github-link" target="_blank">View on GitHub</a>
+          <button class="btn btn-primary" id="modal-close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="/projects.js"></script>
+  </body>
+</html>

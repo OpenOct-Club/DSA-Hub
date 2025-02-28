@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Hub | DSA Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fas fa-code"></i>
+            <span>DSA Hub</span>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="dsa.html" class="active">DSA Guide</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger" aria-label="Toggle menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="page-header">
+      <div class="container">
+        <h1>DSA Learning Guide</h1>
+        <p>Master the fundamentals of data structures and algorithms</p>
+        <br>
+        <a href="https://github.com/Jivan052" class="btn btn-outline dsa-details" data-id="arrays"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+    
+    <section class="dsa-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="all">All</button>
+          <button class="tab-btn" data-category="data-structures">Data Structures</button>
+          <button class="tab-btn" data-category="algorithms">Algorithms</button>
+          <button class="tab-btn" data-category="concepts">Core Concepts</button>
+        </div>
+        
+        <div class="dsa-grid" id="dsa-grid">
+
+          <!-- Data Structures -->
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Arrays</h3>
+              <span class="difficulty easy">Easy</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>A collection of elements stored at contiguous memory locations.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Fast access with index O(1)</li>
+                <li><i class="fas fa-check"></i> Contiguous memory allocation</li>
+                <li><i class="fas fa-times"></i> Fixed size (in some languages)</li>
+                <li><i class="fas fa-times"></i> Insertion/deletion is O(n)</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="arrays">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Linked Lists</h3>
+              <span class="difficulty easy">Easy</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Linear data structure where elements are not stored at contiguous locations.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Dynamic size</li>
+                <li><i class="fas fa-check"></i> Efficient insertions/deletions</li>
+                <li><i class="fas fa-times"></i> Random access is O(n)</li>
+                <li><i class="fas fa-times"></i> Extra memory for pointers</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="linked-lists">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Hash Tables</h3>
+              <span class="difficulty medium">Medium</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Data structure that implements an associative array abstract data type.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Fast lookups O(1) average</li>
+                <li><i class="fas fa-check"></i> Flexible keys</li>
+                <li><i class="fas fa-times"></i> Collisions</li>
+                <li><i class="fas fa-times"></i> Unordered</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="hash-tables">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="data-structures">
+            <div class="dsa-card-header">
+              <h3>Trees</h3>
+              <span class="difficulty medium">Medium</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Hierarchical data structure with a root value and subtrees of children.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Hierarchical representation</li>
+                <li><i class="fas fa-check"></i> Fast search, insert, delete (BST)</li>
+                <li><i class="fas fa-times"></i> Complex implementation</li>
+                <li><i class="fas fa-times"></i> Balancing required for performance</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="trees">Learn More</a>
+            </div>
+          </div>
+          
+          <!-- Algorithms Grid -->
+
+          <div class="dsa-card" data-category="algorithms">
+            <div class="dsa-card-header">
+              <h3>Sorting Algorithms</h3>
+              <span class="difficulty medium">Medium</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Algorithms that arrange elements in a certain order.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Bubble Sort - O(n²)</li>
+                <li><i class="fas fa-check"></i> Merge Sort - O(n log n)</li>
+                <li><i class="fas fa-check"></i> Quick Sort - O(n log n)</li>
+                <li><i class="fas fa-check"></i> Heap Sort - O(n log n)</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="sorting">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="algorithms">
+            <div class="dsa-card-header">
+              <h3>Search Algorithms</h3>
+              <span class="difficulty easy">Easy</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Algorithms for finding an item with specified properties in a collection.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Linear Search - O(n)</li>
+                <li><i class="fas fa-check"></i> Binary Search - O(log n)</li>
+                <li><i class="fas fa-check"></i> Depth-First Search</li>
+                <li><i class="fas fa-check"></i> Breadth-First Search</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="searching">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="algorithms">
+            <div class="dsa-card-header">
+              <h3>Graph Algorithms</h3>
+              <span class="difficulty hard">Hard</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Algorithms that operate on graphs to solve problems like shortest path.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Dijkstra's Algorithm</li>
+                <li><i class="fas fa-check"></i> Bellman-Ford Algorithm</li>
+                <li><i class="fas fa-check"></i> Kruskal's Algorithm</li>
+                <li><i class="fas fa-check"></i> Prim's Algorithm</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="graph-algorithms">Learn More</a>
+            </div>
+          </div>
+          
+          <!-- Core Concepts -->
+          <div class="dsa-card" data-category="concepts">
+            <div class="dsa-card-header">
+              <h3>Big O Notation</h3>
+              <span class="difficulty easy">Easy</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>Mathematical notation that describes the limiting behavior of a function.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Time complexity analysis</li>
+                <li><i class="fas fa-check"></i> Space complexity analysis</li>
+                <li><i class="fas fa-check"></i> Algorithm comparison</li>
+                <li><i class="fas fa-check"></i> Performance prediction</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="big-o">Learn More</a>
+            </div>
+          </div>
+          
+          <div class="dsa-card" data-category="concepts">
+            <div class="dsa-card-header">
+              <h3>Recursion</h3>
+              <span class="difficulty medium">Medium</span>
+            </div>
+            <div class="dsa-card-body">
+              <p>A method where the solution depends on solutions to smaller instances of the same problem.</p>
+              <ul class="dsa-features">
+                <li><i class="fas fa-check"></i> Elegant solutions</li>
+                <li><i class="fas fa-check"></i> Divide and conquer approach</li>
+                <li><i class="fas fa-times"></i> Stack overflow risk</li>
+                <li><i class="fas fa-times"></i> Memory intensive</li>
+              </ul>
+            </div>
+            <div class="dsa-card-footer">
+              <a href="#" class="btn btn-outline dsa-details" data-id="recursion">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- -->
+    
+    <section class="learning-path">
+      <div class="container">
+        <h2 class="section-title">Learning Path</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Step 1: Fundamentals</h3>
+              <p>Learn basic data structures like arrays, linked lists, and stacks. Understand time and space complexity analysis.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Step 2: Intermediate Concepts</h3>
+              <p>Master trees, hash tables, and basic algorithms like sorting and searching.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Step 3: Advanced Topics</h3>
+              <p>Dive into graphs, dynamic programming, and advanced algorithm design techniques.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Step 4: Practice & Application</h3>
+              <p>Solve problems on platforms like LeetCode, HackerRank, and apply concepts to real-world projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 DSA Hub. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="modal-overlay" id="dsa-modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 class="modal-title" id="dsa-modal-title">DSA Topic</h3>
+          <button class="modal-close" id="dsa-modal-close" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="modal-body" id="dsa-modal-body">
+          <!-- Modal content will be rendered here -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="dsa-modal-close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="/dsa.js"></script>
+  </body>
+</html>
